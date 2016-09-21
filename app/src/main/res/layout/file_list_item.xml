@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fileLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="File Name"
+            android:paddingRight="5dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/fileNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fileLabel"
+            android:text="Full Filename"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/fileTypeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is File"
+            android:layout_alignLeft="@id/fileNameTextView"
+            android:layout_below="@id/fileNameTextView"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/fileFullPathTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Path"
+            android:layout_alignLeft="@id/fileNameTextView"
+            android:layout_below="@id/fileTypeTextView"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/fileTypeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type"
+            android:layout_alignTop="@id/fileTypeTextView"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/filePathLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Path"
+            android:layout_alignTop="@id/fileFullPathTextView"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+</layout>

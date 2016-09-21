@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/keyLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="KEY"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/valueLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_below="@id/keyLabel"
+            android:text="VALUE"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/valueTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/valueLabel"
+            android:layout_below="@id/keyLabel"
+            android:text="SHARED VALUE"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/keyTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/keyLabel"
+            android:layout_alignLeft="@id/valueTextView"
+            android:layout_toRightOf="@id/keyLabel"
+            android:layout_above="@id/valueTextView"
+            android:text="SHARED KEY"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</layout>
